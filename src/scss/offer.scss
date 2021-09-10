@@ -1,0 +1,52 @@
+@import 'utilites';
+
+.offer {
+    padding: 90px 0;
+    // .offer__row
+    &__row {
+        @include flexbox(row, space-between, center);
+        margin-top: 70px;
+    }
+    // .offer__col
+    &__col {}
+}
+.travel {
+    color: aliceblue;
+    width: 200px;
+    border-radius: 3px;
+    @include flexbox(column, space-between, flex-start);
+    // .travel__value
+    &__value {
+        padding: 15px;
+    }
+    // .travel__title
+    &__title {
+        font-size: 28px;
+        margin: 130px 0 23px;
+        padding-left: 20px;
+    }
+    // .travel__text
+    &__text {
+        margin-bottom: 80px;
+        padding-left: 20px;
+    }
+    // .travel__price
+    &__price {
+        @include flexbox(row, space-between, center);
+        padding: 20px 10px 20px 20px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, .05);
+        backdrop-filter: blur(10px);
+        height: 100%;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}
+.old-price {
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.new-price {
+    font-weight: bold;
+    font-size: 26px;
+}
