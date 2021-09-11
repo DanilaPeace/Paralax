@@ -1,0 +1,37 @@
+@import 'utilites';
+
+.footer {
+    // .footer__row
+    &__row {
+        @include flexbox(row, space-between, center);
+    }
+    // .footer__social
+    &__social {
+        @include flexbox(row, space-between, center);
+    }
+}
+.container {
+}
+.rights {
+}
+.social {
+}
+.social-item {
+    padding: 15px 10px;
+    // .social-item_twitter
+    &_twitter {}
+    // .social-item_facebook
+    &_facebook {}
+    // .social-item_vk
+    &_vk {}
+}
+.fab {
+}
+.fa-twitter {
+}
+.fa-facebook-f {
+}
+.fa-vk {
+}
+.contact-number {
+}
