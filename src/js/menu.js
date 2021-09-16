@@ -3,5 +3,5 @@ window.addEventListener('scroll', function () {
     let winScroll = document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (winScroll / scrollHeight) * 100;
-    document.querySelector(".slider.slider_active").style.width = scrolled + "%";
+    document.querySelector(".menu-slider.menu-slider_active").style.width = scrolled + "%";
 })

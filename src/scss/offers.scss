@@ -7,6 +7,9 @@
     &__row {
         @include flexbox(row, space-between, center);
         margin-top: 70px;
+        @media screen and (max-width: $mdq1 + px) {
+            display: none;
+        }
     }
     // .offers__col
     &__col {
