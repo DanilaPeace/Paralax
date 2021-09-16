@@ -522,15 +522,13 @@ ChiefSlider.prototype.refresh = function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.addEventListener('DOMContentLoaded', function () {
-    var elms = document.querySelectorAll('.slider');
-    for (var i = 0, len = elms.length; i < len; i++) {
-      // инициализация elms[i] в качестве слайдера
-      new ChiefSlider(elms[i], {
-        loop: true,
-        autoplay: true,
-        interval: 5000,
-      });
-    }
-  });
+  var elms = document.querySelectorAll('.slider');
+  for (var i = 0, len = elms.length; i < len; i++) {
+    // инициализация elms[i] в качестве слайдера
+    new ChiefSlider(elms[i], {
+      loop: true,
+      autoplay: true,
+      interval: 5000,
+    });
+  }
 });
