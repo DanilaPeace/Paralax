@@ -40,9 +40,15 @@
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
+    @media screen and (max-width: $mdq4+px){
+        font-size: 1.8rem;
+    }
     &__title {
         position: relative;
         padding-bottom: 30px;
+        @media screen and (max-width: $mdq4+px){
+            padding-bottom: 20px;
+        }
         &::after{
             @include line();
             width: 100px;
