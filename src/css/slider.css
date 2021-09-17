@@ -130,6 +130,11 @@
     flex: 0 0 33.3333%;
     max-width: 33.333%;
   }
+
+  .slider__item-journal {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 @media screen and ( max-width: 768px) {
